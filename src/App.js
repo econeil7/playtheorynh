@@ -1,23 +1,80 @@
 import logo from './logo.svg';
 import './App.css';
+import Header from './components/Header';
+import Navbar from './components/Navbar';
+import Footer from './components/Footer';
+import CallToAction from './components/CallToAction';
+import BannerSection from './components/BannerSection';
+import BannerContainer from './components/BannerContainer';
 
 function App() {
   return (
     <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
+      <header>
+      <a href='https://google.com' id='logo-link'>
+        <img src='play-theory-logo.png' className='App-logo'/>
+      </a>
       </header>
+      <div>
+        <Navbar/>
+      </div>
+      <div id='section-1'>
+        <CallToAction
+          title='This stuff is FUN!'
+          bodyText='Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.'
+          buttonText='WANT TO KNOW MORE?'
+          italicizeLastWord={true}
+        />
+      </div>
+      <BannerContainer>
+        <BannerSection
+          title="SAVE YOUR MONEY"
+          bodyText="The average American child receives more than $6,500 worth of toys in their lifetime, according to The Toy Industry Association. We believe there’s a more cost-effective way!"
+          additionalContent={<a href="https://www.toyassociation.org">The Toy Industry Association</a>}
+        />
+        <BannerSection
+          title="SAVE YOUR MONEY"
+          bodyText="The average American child receives more than $6,500 worth of toys in their lifetime, according to The Toy Industry Association. We believe there’s a more cost-effective way!"
+        />
+        <BannerSection
+          title="SAVE YOUR MONEY"
+          bodyText="The average American child receives more than $6,500 worth of toys in their lifetime, according to The Toy Industry Association. We believe there’s a more cost-effective way!"
+        />
+        <BannerSection
+          title="SAVE YOUR MONEY"
+          bodyText="The average American child receives more than $6,500 worth of toys in their lifetime, according to The Toy Industry Association. We believe there’s a more cost-effective way!"
+        />
+      </BannerContainer>
+      <div id='section-2'>
+        <CallToAction
+          title='We offer Memberships'
+          bodyText='Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.'
+          buttonText='SIGN UP NOW'
+        />
+      </div>
+      <BannerContainer>
+      <BannerSection
+          title="SAVE YOUR MONEY"
+          bodyText="The average American child receives more than $6,500 worth of toys in their lifetime, according to The Toy Industry Association. We believe there’s a more cost-effective way!"
+        />
+        <BannerSection
+          title="SAVE YOUR MONEY"
+          bodyText="The average American child receives more than $6,500 worth of toys in their lifetime, according to The Toy Industry Association. We believe there’s a more cost-effective way!"
+        />
+        <BannerSection
+          title="SAVE YOUR MONEY"
+          bodyText="The average American child receives more than $6,500 worth of toys in their lifetime, according to The Toy Industry Association. We believe there’s a more cost-effective way!"
+          additionalContent={<a href="https://www.toyassociation.org">The Toy Industry Association</a>}
+        />
+      </BannerContainer>
+      <div id='section-3'>
+        <CallToAction
+          title='Stay Informed'
+          bodyText='Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.'
+          buttonText='JOIN OUR NEWSLETTER'
+        />
+      </div>
+      <Footer/>
     </div>
   );
 }
