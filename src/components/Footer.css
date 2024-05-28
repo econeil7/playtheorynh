@@ -7,7 +7,7 @@
     display: flex;
     justify-content: center; /* Center the navbar items */
     align-items: center;
-    background-color: #e77c7c;
+    background-color: #009b81;
     padding: 0;
     height: 60px;
   }
@@ -43,6 +43,6 @@
   }
   
   .footer-links a:hover {
-    background-color: #f39e9e;
+    background-color: #9fc4e8;
   }
   

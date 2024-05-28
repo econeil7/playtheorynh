@@ -11,8 +11,8 @@ function App() {
   return (
     <div className="App">
       <header>
-      <a href='https://google.com' id='logo-link'>
-        <img src='play-theory-logo.png' className='App-logo'/>
+      <a href='https://playtheorynh.myturn.com' target='_blank' id='logo-link'>
+        <img src={`${process.env.PUBLIC_URL}/play-theory-logo-revised.png`} className='App-logo'/>
       </a>
       </header>
       <div>
@@ -28,20 +28,20 @@ function App() {
       </div>
       <BannerContainer>
         <BannerSection
-          title="SAVE YOUR MONEY"
+          title="SAVE MONEY"
           bodyText="The average American child receives more than $6,500 worth of toys in their lifetime, according to The Toy Industry Association. We believe there’s a more cost-effective way!"
           additionalContent={<a href="https://www.toyassociation.org">The Toy Industry Association</a>}
         />
         <BannerSection
-          title="SAVE YOUR MONEY"
+          title="SAVE SPACE"
           bodyText="The average American child receives more than $6,500 worth of toys in their lifetime, according to The Toy Industry Association. We believe there’s a more cost-effective way!"
         />
         <BannerSection
-          title="SAVE YOUR MONEY"
+          title="REDUCE CONSUMER WASTE"
           bodyText="The average American child receives more than $6,500 worth of toys in their lifetime, according to The Toy Industry Association. We believe there’s a more cost-effective way!"
         />
         <BannerSection
-          title="SAVE YOUR MONEY"
+          title="INCREASE VARIETY"
           bodyText="The average American child receives more than $6,500 worth of toys in their lifetime, according to The Toy Industry Association. We believe there’s a more cost-effective way!"
         />
       </BannerContainer>

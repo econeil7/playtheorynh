@@ -9,7 +9,7 @@
     display: flex;
     justify-content: center; /* Center the navbar items */
     align-items: center;
-    background-color: #e77c7c;
+    background-color: #009b81;
     padding: 0;
     height: 60px;
   }
@@ -39,11 +39,26 @@
     padding: 1rem;
   }
   
-  .navbar-links a:hover {
-    background-color: #f39e9e; /* Change background color on hover */
+  .navbar-links a:hover,
+  .navbar-links:focus-within > a {
+    background-color: #9fc4e8; /* Change background color on hover */
   }
   
   .navbar-links a:active {
-    background-color: #f39e9e; /* Change background color on click */
+    background-color: #9fc4e8; /* Change background color on click */
+  }
+
+  .dropdown {
+    height: 100%;
+  }
+
+  .dropdown-content {
+    display: none;
+    position: absolute;
+    background-color: #009b81;
+  }
+
+  .dropdown:hover .dropdown-content {
+    display: block;
   }
   

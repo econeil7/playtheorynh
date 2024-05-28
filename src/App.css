@@ -24,6 +24,10 @@
   color: white;
 }
 
+.App-logo {
+  padding: 3%;
+}
+
 .App-link {
   color: #61dafb;
 }
@@ -42,8 +46,9 @@
   justify-content: center;
   align-items: center;
   height: 500px;
-  background-image: url('/public/fun.webp');
+  background-image: url('/public/child-1864718.jpg');
   background-attachment: fixed;
+  background-size: 100% 100%;
 }
 
 #section-2 {
@@ -51,8 +56,9 @@
   justify-content: center;
   align-items: center;
   height: 500px;
-  background-image: url('/public/memberships.webp');
+  background-image: url('/public/have-fun-1679589.jpg');
   background-attachment: fixed;
+  background-size: cover;
 }
 
 #section-3 {
@@ -60,8 +66,9 @@
   justify-content: center;
   align-items: center;
   height: 500px;
-  background-image: url('/public/newsletter.webp');
+  background-image: url('/public/toys-4940741.jpg');
   background-attachment: fixed;
+  background-size: cover;
 }
 
 #logo-link {
